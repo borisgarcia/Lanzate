@@ -1,29 +1,36 @@
 export default [
   {
-    title: 'Hardly Anything Takes More Coura...',
-    image: 'https://source.unsplash.com/dS2hi__ZZMk/840x840',
-    price: 180,
-    horizontal: true,
+    title: "Gracias a Dios",
+    image: "https://diarioroatan.com/wp-content/uploads/2018/02/gotakey1.png"
   },
   {
-    title: 'Find the cheapest deals on our range...',
-    image: 'https://source.unsplash.com/tb6ulgGY5Zc/840x840',
-    price: 220,
+    title: "El Paraiso.",
+    image:
+      "https://www.elheraldo.hn/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=a19wySL4X8oJSY4o99RhBs$daE2N3K4ZzOUsqbU5sYtzvqnqfrhAD9YNpdw9h9BP6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&CONTENTTYPE=image/jpeg"
   },
   {
-    title: 'Adidas Tango Terry Jersey',
-    image: 'https://source.unsplash.com/YHbcum51JB0/840x840',
-    price: 40,
+    title: "Olancho",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/e/ea/Juticalpa-art_127_%281%29.jpg"
   },
   {
-    title: 'Internet of Things (IoT) is Here to Stay',
-    image: 'https://source.unsplash.com/I7BSOoPa5hM/840x840',
-    price: 188,
-    horizontal: true,
+    title: "Valle",
+    image:
+      "https://diarioroatan.com/wp-content/uploads/2017/07/san-lorenzo-iglesia.jpg"
   },
   {
-    title: 'Coffee - A Drop of Happiness in a Cup',
-    image: 'https://source.unsplash.com/Ws4wd-vJ9M0/840x840',
-    price: 180,
+    title: "La Paz",
+    image:
+      "https://media2.trover.com/T/556d0595198e443e5200028c/fixedw_large_4x.jpg"
   },
+  {
+    title: "Yoro",
+    image:
+      "https://munielprogreso.hn/assets/images/turismo/museo-ferroviario.JPG"
+  },
+  {
+    title: "Choluteca",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/1/1b/Puente_Choluteca_Bridge.jpg"
+  }
 ];

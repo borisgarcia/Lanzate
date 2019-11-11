@@ -12,12 +12,12 @@ const Avatar =
   "https://images.unsplash.com/photo-1518725522904-4b3939358342?fit=crop&w=210&q=80";
 
 const Viewed = [
-  "https://images.unsplash.com/photo-1508264443919-15a31e1d9c1a?fit=crop&w=240&q=80",
-  "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?fit=crop&w=240&q=80",
-  "https://images.unsplash.com/photo-1487376480913-24046456a727?fit=crop&w=240&q=80",
-  "https://images.unsplash.com/photo-1494894194458-0174142560c0?fit=crop&w=240&q=80",
-  "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?fit=crop&w=240&q=80",
-  "https://images.unsplash.com/photo-1542068829-1115f7259450?fit=crop&w=240&q=80"
+  "https://cdn1.iconfinder.com/data/icons/miscellaneous-ii-line-style/150/food-lovers-512.png",
+  "https://cdn2.iconfinder.com/data/icons/maki/100/lodging-512.png",
+  "https://cdn4.iconfinder.com/data/icons/coffee-108/512/coffee-cafe-13-512.png",
+  "https://cdn5.vectorstock.com/i/1000x1000/13/49/recreation-activities-and-leisure-icons-vector-14921349.jpg",
+  "https://cdn2.iconfinder.com/data/icons/rounded-white-basic-ui-set-3/139/Gallery-RoundedWhite-512.png",
+  "https://cdn4.iconfinder.com/data/icons/minimal-set-four/32/minimal-77-512.png"
 ];
 
 export default {

@@ -69,7 +69,7 @@ const ProfileStack = createStackNavigator(
   }
 );
 
-const ComponentsStack = createStackNavigator(
+/* const ComponentsStack = createStackNavigator(
   {
     Components: {
       screen: ComponentsScreen,
@@ -83,7 +83,7 @@ const ComponentsStack = createStackNavigator(
     transitionConfig
   }
 );
-
+ */
 const HomeStack = createStackNavigator(
   {
     Home: {
@@ -124,14 +124,14 @@ const AppStack = createDrawerNavigator({
       )
     })
   },
-  Components: {
+  /* Components: {
     screen: ComponentsStack,
     navigationOptions: navOpt => ({
       drawerLabel: ({ focused }) => (
         <Drawer focused={focused} screen="Components" title="Components" />
       )
     })
-  },
+  }, */
   MenuDivider: {
     screen: HomeStack,
     navigationOptions: {
