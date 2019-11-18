@@ -1,9 +1,8 @@
 import React from "react";
 import { withNavigation } from "react-navigation";
 import { StyleSheet, Platform, Dimensions } from "react-native";
-import { Button, Block, NavBar, Input, Text, theme } from "galio-framework";
+import { Block, NavBar, theme } from "galio-framework";
 
-import Icon from "./Icon";
 import materialTheme from "../constants/Theme";
 
 const { height, width } = Dimensions.get("window");
@@ -15,11 +14,6 @@ class Header extends React.Component {
   handleLeftPress = () => {
     const { back, navigation } = this.props;
     return back ? navigation.goBack() : navigation.openDrawer();
-  };
-
-  renderRight = () => {
-    const { white, title, navigation } = this.props;
-    const { routeName } = navigation.state;
   };
 
   renderHeader = () => {
@@ -42,7 +36,6 @@ class Header extends React.Component {
           title={title}
           style={styles.navbar}
           transparent={transparent}
-          right={this.renderRight()}
           rightStyle={{ alignItems: "center" }}
           leftStyle={{ flex: 0.3, paddingTop: 2 }}
           leftIconName="navicon"

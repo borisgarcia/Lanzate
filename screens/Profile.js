@@ -23,6 +23,13 @@ export default class Profile extends React.Component {
     return (
       <Block flex style={styles.profile}>
         <Block flex>
+          <Text
+            size={12}
+            color={theme.COLORS.PRIMARY}
+            onPress={() => this.props.navigation.navigate("Home")}
+          >
+            View All
+          </Text>
           <ImageBackground
             source={{ uri: params.image }}
             style={styles.profileContainer}
@@ -51,17 +58,7 @@ export default class Profile extends React.Component {
                       <Icon name="shape-star" family="GalioExtra" size={14} />
                     </Text>
                   </Block>
-                  <Block>
-                    <Text color={theme.COLORS.MUTED} size={16}>
-                      <Icon
-                        name="map-marker"
-                        family="font-awesome"
-                        color={theme.COLORS.MUTED}
-                        size={16}
-                      />
-                      {` `}
-                    </Text>
-                  </Block>
+                  <Block></Block>
                 </Block>
               </Block>
               <LinearGradient
@@ -79,13 +76,6 @@ export default class Profile extends React.Component {
               style={{ paddingVertical: 16, alignItems: "baseline" }}
             >
               <Text size={16}></Text>
-              <Text
-                size={12}
-                color={theme.COLORS.PRIMARY}
-                onPress={() => this.props.navigation.navigate("Home")}
-              >
-                View All
-              </Text>
             </Block>
             <Block style={{ paddingBottom: -HeaderHeight * 2 }}>
               <Block row space="between" style={{ flexWrap: "wrap" }}>

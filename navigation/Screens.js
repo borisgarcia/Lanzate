@@ -59,7 +59,7 @@ const NavStack = createStackNavigator(
       screen: ProfileScreen,
       navigationOptions: ({ navigation }) => ({
         header: (
-          <Header white transparent title="Profile" navigation={navigation} />
+          <Header white title="Profile" navigation={navigation} />
         )
       })
     }
