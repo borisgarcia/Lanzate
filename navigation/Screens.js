@@ -12,7 +12,6 @@ import ProfileScreen from "../screens/Profile";
 
 import Header from "../components/Header";
 
-
 const transitionConfig = (transitionProps, prevTransitionProps) => ({
   transitionSpec: {
     duration: 400,
@@ -52,15 +51,13 @@ const NavStack = createStackNavigator(
     Home: {
       screen: HomeScreen,
       navigationOptions: ({ navigation }) => ({
-        header: <Header search tabs title="Home" navigation={navigation} />
+        header: <Header title="Inicio" navigation={navigation} />
       })
     },
     Profile: {
       screen: ProfileScreen,
       navigationOptions: ({ navigation }) => ({
-        header: (
-          <Header white title="Profile" navigation={navigation} />
-        )
+        header: <Header title="Departamento" navigation={navigation} />
       })
     }
   },
