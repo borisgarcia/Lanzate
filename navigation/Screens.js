@@ -1,21 +1,17 @@
 import React from "react";
-import { Easing, Animated, Platform } from "react-native";
+import { Easing, Animated } from "react-native";
 import {
-  createSwitchNavigator,
   createStackNavigator,
   createDrawerNavigator,
   createAppContainer
 } from "react-navigation";
 
-import { Block, Text } from "galio-framework";
-
-import ComponentsScreen from "../screens/Components";
 import HomeScreen from "../screens/Home";
 import OnboardingScreen from "../screens/Onboarding";
 import ProfileScreen from "../screens/Profile";
 
 import Header from "../components/Header";
-import { Drawer } from "../components/";
+
 
 const transitionConfig = (transitionProps, prevTransitionProps) => ({
   transitionSpec: {
@@ -51,45 +47,20 @@ const transitionConfig = (transitionProps, prevTransitionProps) => ({
   }
 });
 
-const ProfileStack = createStackNavigator(
-  {
-    Profile: {
-      screen: ProfileScreen,
-      navigationOptions: ({ navigation }) => ({
-        header: (
-          <Header white transparent title="Profile" navigation={navigation} />
-        ),
-        headerTransparent: true
-      })
-    }
-  },
-  {
-    cardStyle: { backgroundColor: "#EEEEEE" },
-    transitionConfig
-  }
-);
-
-/* const ComponentsStack = createStackNavigator(
-  {
-    Components: {
-      screen: ComponentsScreen,
-      navigationOptions: ({ navigation }) => ({
-        header: <Header title="Components" navigation={navigation} />
-      })
-    }
-  },
-  {
-    cardStyle: { backgroundColor: "#EEEEEE" },
-    transitionConfig
-  }
-);
- */
-const HomeStack = createStackNavigator(
+const NavStack = createStackNavigator(
   {
     Home: {
       screen: HomeScreen,
       navigationOptions: ({ navigation }) => ({
         header: <Header search tabs title="Home" navigation={navigation} />
+      })
+    },
+    Profile: {
+      screen: ProfileScreen,
+      navigationOptions: ({ navigation }) => ({
+        header: (
+          <Header white transparent title="Profile" navigation={navigation} />
+        )
       })
     }
   },
@@ -103,44 +74,10 @@ const HomeStack = createStackNavigator(
 
 const AppStack = createDrawerNavigator({
   Onboarding: {
-    screen: OnboardingScreen,
-    navigationOptions: {
-      drawerLabel: () => {}
-    }
+    screen: OnboardingScreen
   },
   Home: {
-    screen: HomeStack,
-    navigationOptions: {
-      drawerLabel: ({ focused }) => (
-        <Drawer focused={focused} screen="Home" title="Home" />
-      )
-    }
-  },
-  Profile: {
-    screen: ProfileStack,
-    navigationOptions: navOpt => ({
-      drawerLabel: ({ focused }) => (
-        <Drawer focused={focused} screen="Profile" title="Profile" />
-      )
-    })
-  },
-  /* Components: {
-    screen: ComponentsStack,
-    navigationOptions: navOpt => ({
-      drawerLabel: ({ focused }) => (
-        <Drawer focused={focused} screen="Components" title="Components" />
-      )
-    })
-  }, */
-  MenuDivider: {
-    screen: HomeStack,
-    navigationOptions: {
-      drawerLabel: () => (
-        <Block style={{ marginVertical: 8 }}>
-          <Text>{` `}</Text>
-        </Block>
-      )
-    }
+    screen: NavStack
   }
 });
 

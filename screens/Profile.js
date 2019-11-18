@@ -13,30 +13,31 @@ import { LinearGradient } from "expo-linear-gradient";
 import { Icon } from "../components";
 import { Images, materialTheme } from "../constants";
 import { HeaderHeight } from "../constants/utils";
-
+const util = require("util");
 const { width, height } = Dimensions.get("screen");
 const thumbMeasure = (width - 48 - 32) / 3;
 
 export default class Profile extends React.Component {
   render() {
+    const params = this.props.navigation.getParam("params", "NotFount");
     return (
       <Block flex style={styles.profile}>
         <Block flex>
           <ImageBackground
-            source={{ uri: Images.Profile }}
+            source={{ uri: params.image }}
             style={styles.profileContainer}
             imageStyle={styles.profileImage}
           >
             <Block flex style={styles.profileDetails}>
               <Block style={styles.profileTexts}>
                 <Text color="white" size={28} style={{ paddingBottom: 8 }}>
-                  {this.props.name}
+                  {params.title}
                 </Text>
                 <Block row space="between">
                   <Block row>
                     <Block middle style={styles.pro}>
                       <Text size={16} color="white">
-                        {this.props.name}
+                        {}
                       </Text>
                     </Block>
                     <Text

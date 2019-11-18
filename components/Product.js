@@ -34,7 +34,7 @@ class Product extends React.Component {
         style={[styles.product, styles.shadow, style]}
       >
         <TouchableWithoutFeedback
-          onPress={() => navigation.navigate("Profile", { name: "Hola" })}
+          onPress={() => navigation.navigate("Profile", { params: product  })}
         >
           <Block flex space="between" style={styles.productDescription}>
             <Text size={18} style={styles.productTitle}>
@@ -44,7 +44,7 @@ class Product extends React.Component {
           </Block>
         </TouchableWithoutFeedback>
         <TouchableWithoutFeedback
-          onPress={() => navigation.navigate("Profile", { name: "Hola" })}
+          onPress={() => navigation.navigate("Profile", { params: product})}
         >
           <Block flex style={[styles.imageContainer, styles.shadow]}>
             <Image source={{ uri: product.image }} style={imageStyles} />
