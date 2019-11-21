@@ -12,8 +12,7 @@ const iPhoneX = () =>
 
 class Header extends React.Component {
   handleLeftPress = () => {
-    const { back, navigation } = this.props;
-    return navigation.goBack();
+    return this.props.navigation.goBack();
   };
 
   renderHeader = () => {
@@ -30,12 +29,14 @@ class Header extends React.Component {
     ];
 
     return (
-      <Block style={headerStyles}>
+      <Block>
         <NavBar
           back={back}
           title={title}
           style={styles.navbar}
           transparent={transparent}
+          rightStyle={{ alignItems: "center" }}
+          leftStyle={{ flex: 0.3, paddingTop: 2 }}
           leftIconName="navicon"
           leftIconColor={white ? theme.COLORS.WHITE : theme.COLORS.ICON}
           titleStyle={[
@@ -59,7 +60,9 @@ const styles = StyleSheet.create({
   title: {
     width: "100%",
     fontSize: 16,
-    fontWeight: "bold"
+    fontWeight: "bold",
+    fontStyle: "italic",
+    fontFamily:"serif"
   },
   navbar: {
     paddingVertical: 0,

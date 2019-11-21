@@ -25,7 +25,7 @@ export default class Onboarding extends React.Component {
             style={{
               height: height,
               width: width,
-              zIndex: 1
+              zIndex: -1
             }}
           />
         </Block>
@@ -33,7 +33,7 @@ export default class Onboarding extends React.Component {
           <Block flex space="around" style={{ zIndex: 2 }}>
             <Block>
               <Block>
-                <Text color="white" size={60}>
+                <Text color="white" style={styles.title} size={60}>
                   Lanzate!
                 </Text>
               </Block>
@@ -72,5 +72,10 @@ const styles = StyleSheet.create({
     height: theme.SIZES.BASE * 3,
     shadowRadius: 0,
     shadowOpacity: 0
-  }
+  },
+  title: {
+    fontWeight: "bold",
+    fontStyle: "italic",
+    fontFamily:"serif"
+  },
 });

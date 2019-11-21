@@ -51,8 +51,7 @@ const NavStack = createStackNavigator(
     Onboarding: {
       screen: OnboardingScreen,
       navigationOptions: ({ navigation }) => ({
-        header: <Header title="Inicio" transparent navigation={navigation} />,
-        headerTransparent: true
+        header: <Header title="Lanzate" navigation={navigation} />
       })
     },
     Home: {
@@ -64,7 +63,13 @@ const NavStack = createStackNavigator(
     Profile: {
       screen: ProfileScreen,
       navigationOptions: ({ navigation }) => ({
-        header: <Header title="Departamento" navigation={navigation} />
+        header: (
+          <Header
+            title="Departamento"
+            transparent={false}
+            navigation={navigation}
+          />
+        )
       })
     }
   },
