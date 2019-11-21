@@ -15,6 +15,8 @@ class Product extends React.Component {
     const {
       navigation,
       product,
+      info,
+      fromProfile,
       horizontal,
       full,
       style,
@@ -25,8 +27,7 @@ class Product extends React.Component {
       full ? styles.fullImage : styles.horizontalImage,
       imageStyle
     ];
-
-    return (
+    const productList = (
       <Block
         row={horizontal}
         card
@@ -34,7 +35,7 @@ class Product extends React.Component {
         style={[styles.product, styles.shadow, style]}
       >
         <TouchableWithoutFeedback
-          onPress={() => navigation.navigate("Profile", { params: product  })}
+          onPress={() => navigation.navigate("Profile", { params: product })}
         >
           <Block flex space="between" style={styles.productDescription}>
             <Text size={18} style={styles.productTitle}>
@@ -44,7 +45,7 @@ class Product extends React.Component {
           </Block>
         </TouchableWithoutFeedback>
         <TouchableWithoutFeedback
-          onPress={() => navigation.navigate("Profile", { params: product})}
+          onPress={() => navigation.navigate("Profile", { params: product })}
         >
           <Block flex style={[styles.imageContainer, styles.shadow]}>
             <Image source={{ uri: product.image }} style={imageStyles} />
@@ -53,6 +54,7 @@ class Product extends React.Component {
         </TouchableWithoutFeedback>
       </Block>
     );
+    return <Block>{fromProfile ? <Block /> : productList}</Block>;
   }
 }
 

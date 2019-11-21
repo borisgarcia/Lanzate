@@ -13,7 +13,7 @@ const iPhoneX = () =>
 class Header extends React.Component {
   handleLeftPress = () => {
     const { back, navigation } = this.props;
-    return back ? navigation.goBack() : navigation.openDrawer();
+    return navigation.goBack();
   };
 
   renderHeader = () => {
@@ -36,8 +36,6 @@ class Header extends React.Component {
           title={title}
           style={styles.navbar}
           transparent={transparent}
-          rightStyle={{ alignItems: "center" }}
-          leftStyle={{ flex: 0.3, paddingTop: 2 }}
           leftIconName="navicon"
           leftIconColor={white ? theme.COLORS.WHITE : theme.COLORS.ICON}
           titleStyle={[
@@ -46,7 +44,6 @@ class Header extends React.Component {
           ]}
           onLeftPress={this.handleLeftPress}
         />
-        {this.renderHeader()}
       </Block>
     );
   }

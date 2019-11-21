@@ -15,13 +15,13 @@ export default class Home extends React.Component {
         contentContainerStyle={styles.products}
       >
         <Block flex>
-          <Product product={products[0]} full />
-          <Product product={products[1]} full />
-          <Product product={products[2]} full />
-          <Product product={products[3]} full />
-          <Product product={products[4]} full />
-          <Product product={products[5]} full />
-          <Product product={products[6]} full />
+          <Product product={products[0]} full fromProfile={false}/>
+          <Product product={products[1]} full fromProfile={false}/>
+          <Product product={products[2]} full fromProfile={false}/>
+          <Product product={products[3]} full fromProfile={false}/>
+          <Product product={products[4]} full fromProfile={false}/>
+          <Product product={products[5]} full fromProfile={false}/>
+          <Product product={products[6]} full fromProfile={false}/>
         </Block>
       </ScrollView>
     );

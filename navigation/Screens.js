@@ -48,6 +48,13 @@ const transitionConfig = (transitionProps, prevTransitionProps) => ({
 
 const NavStack = createStackNavigator(
   {
+    Onboarding: {
+      screen: OnboardingScreen,
+      navigationOptions: ({ navigation }) => ({
+        header: <Header title="Inicio" transparent navigation={navigation} />,
+        headerTransparent: true
+      })
+    },
     Home: {
       screen: HomeScreen,
       navigationOptions: ({ navigation }) => ({
@@ -78,5 +85,5 @@ const AppStack = createDrawerNavigator({
   }
 });
 
-const AppContainer = createAppContainer(AppStack);
+const AppContainer = createAppContainer(NavStack);
 export default AppContainer;

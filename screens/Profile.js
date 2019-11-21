@@ -16,6 +16,9 @@ import { HeaderHeight } from "../constants/utils";
 const util = require("util");
 const { width, height } = Dimensions.get("screen");
 const thumbMeasure = (width - 48 - 32) / 3;
+import { Product } from "../components/";
+
+import products from "../constants/products";
 
 export default class Profile extends React.Component {
   render() {
@@ -75,18 +78,17 @@ export default class Profile extends React.Component {
               space="between"
               style={{ paddingVertical: 16, alignItems: "baseline" }}
             >
-              <Text size={16}></Text>
+              <Text size={16}>{"Hi"}</Text>
             </Block>
             <Block style={{ paddingBottom: -HeaderHeight * 2 }}>
-              <Block row space="between" style={{ flexWrap: "wrap" }}>
-                {Images.Viewed.map(img => (
-                  <Image
-                    source={{ uri: img }}
-                    key={`viewed-${img}`}
-                    resizeMode="cover"
-                    style={styles.thumb}
-                  />
-                ))}
+              <Block>
+                <Product product={products[0]} full fromProfile={true}/>
+                <Product product={products[1]} full fromProfile={true}/>
+                <Product product={products[2]} full fromProfile={true}/>
+                <Product product={products[3]} full fromProfile={true}/>
+                <Product product={products[4]} full fromProfile={true}/>
+                <Product product={products[5]} full fromProfile={true}/>
+                <Product product={products[6]} full fromProfile={true}/>
               </Block>
             </Block>
           </ScrollView>
