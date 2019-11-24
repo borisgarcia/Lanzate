@@ -54,7 +54,36 @@ class Product extends React.Component {
         </TouchableWithoutFeedback>
       </Block>
     );
-    return <Block>{fromProfile ? <Block /> : productList}</Block>;
+
+    const productInfo = (
+      <Block
+        row={horizontal}
+        card
+        flex
+        style={[styles.product, styles.shadow, style]}
+      >
+        <TouchableWithoutFeedback
+          onPress={() => navigation.navigate("Profile", { params: product })}
+        >
+          <Block flex space="between" style={styles.productDescription}>
+            <Text size={18} style={styles.productTitle}>
+              {product.title}
+            </Text>
+            <Text></Text>
+          </Block>
+        </TouchableWithoutFeedback>
+        <TouchableWithoutFeedback
+          onPress={() => navigation.navigate("Profile", { params: product })}
+        >
+          <Block flex style={[styles.imageContainer, styles.shadow]}>
+            <Image source={{ uri: product.image }} style={imageStyles} />
+            <Text></Text>
+          </Block>
+        </TouchableWithoutFeedback>
+      </Block>
+
+    );
+    return <Block>{fromProfile ? productInfo : productList}</Block>;
   }
 }
 

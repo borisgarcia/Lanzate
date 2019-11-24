@@ -19,6 +19,7 @@ const thumbMeasure = (width - 48 - 32) / 3;
 import { Product } from "../components/";
 
 import products from "../constants/products";
+import activities from "../constants/Images/";
 
 export default class Profile extends React.Component {
   render() {
@@ -82,13 +83,41 @@ export default class Profile extends React.Component {
             </Block>
             <Block style={{ paddingBottom: -HeaderHeight * 2 }}>
               <Block>
-                <Product product={products[0]} full fromProfile={true}/>
-                <Product product={products[1]} full fromProfile={true}/>
-                <Product product={products[2]} full fromProfile={true}/>
-                <Product product={products[3]} full fromProfile={true}/>
-                <Product product={products[4]} full fromProfile={true}/>
-                <Product product={products[5]} full fromProfile={true}/>
-                <Product product={products[6]} full fromProfile={true}/>
+                <Product
+                  product={Images.Activities[0]}
+                  horizontal
+                  fromProfile={true}
+                />
+                <Product
+                  product={Images.Activities[1]}
+                  horizontal
+                  fromProfile={true}
+                />
+                <Product
+                  product={Images.Activities[2]}
+                  horizontal
+                  fromProfile={true}
+                />
+                <Product
+                  product={Images.Activities[3]}
+                  horizontal
+                  fromProfile={true}
+                />
+                <Product
+                  product={Images.Activities[4]}
+                  horizontal
+                  fromProfile={true}
+                />
+                <Product
+                  product={Images.Activities[5]}
+                  horizontal
+                  fromProfile={true}
+                />
+                <Product
+                  product={Images.Activities[5]}
+                  horizontal
+                  fromProfile={true}
+                />
               </Block>
             </Block>
           </ScrollView>
