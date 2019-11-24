@@ -25,22 +25,23 @@ export default class Onboarding extends React.Component {
             style={{
               height: height,
               width: width,
-              zIndex: -1
+              zIndex: -1,
+              marginTop: -80
             }}
           />
         </Block>
         <Block flex space="between" style={styles.padded}>
           <Block flex space="around" style={{ zIndex: 2 }}>
-            <Block>
+            {/* <Block>
               <Block>
                 <Text color="white" style={styles.title} size={60}>
-                  Lanzate!
+                  ¡Lánzate!
                 </Text>
               </Block>
               <Text size={16} color="rgba(255,255,255,0.6)">
                 Algun Texto por aqui.
               </Text>
-            </Block>
+            </Block> */}
             <Block center>
               <Button
                 shadowless
@@ -60,7 +61,7 @@ export default class Onboarding extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: theme.COLORS.BLACK
+    backgroundColor: "#0ba39f"
   },
   padded: {
     paddingHorizontal: theme.SIZES.BASE * 2,
@@ -71,11 +72,12 @@ const styles = StyleSheet.create({
     width: width - theme.SIZES.BASE * 4,
     height: theme.SIZES.BASE * 3,
     shadowRadius: 0,
-    shadowOpacity: 0
+    shadowOpacity: 0,
+    marginTop: 300
   },
   title: {
     fontWeight: "bold",
     fontStyle: "italic",
-    fontFamily:"serif"
-  },
+    fontFamily: "serif"
+  }
 });

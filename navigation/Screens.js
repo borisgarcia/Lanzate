@@ -51,7 +51,7 @@ const NavStack = createStackNavigator(
     Onboarding: {
       screen: OnboardingScreen,
       navigationOptions: ({ navigation }) => ({
-        header: <Header title="Lanzate" navigation={navigation} />
+        header: <Header title="" navigation={navigation} />
       })
     },
     Home: {

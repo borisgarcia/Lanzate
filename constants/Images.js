@@ -1,5 +1,4 @@
-const Onboarding =
-  "https://www.revistaestilo.net/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=PKtIYQUCWbkUky8sQE1qqM$daE2N3K4ZzOUsqbU5sYu_edBIPdXbiw2zZjH7WvWyWCsjLu883Ygn4B49Lvm9bPe2QeMKQdVeZmXF$9l$4uCZ8QDXhaHEp3rvzXRJFdy0KqPHLoMevcTLo3h8xh70Y6N_U_CryOsw6FTOdKL_jpQ-&CONTENTTYPE=image/jpeg";
+const Onboarding = "https://i.imgur.com/aHiBD4B.png";
 const Pro =
   "https://images.unsplash.com/photo-1485796826113-174aa68fd81b?fit=crop&w=840&q=80";
 const Products = {
