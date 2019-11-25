@@ -26,7 +26,7 @@ export default class Onboarding extends React.Component {
               height: height,
               width: width,
               zIndex: -1,
-              marginTop: -80
+              marginTop: -85
             }}
           />
         </Block>

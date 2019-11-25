@@ -18,9 +18,6 @@ const { width, height } = Dimensions.get("screen");
 const thumbMeasure = (width - 48 - 32) / 3;
 import { Product } from "../components/";
 
-import products from "../constants/products";
-import activities from "../constants/Images/";
-
 export default class Profile extends React.Component {
   render() {
     const params = this.props.navigation.getParam("params", "NotFount");
@@ -77,48 +74,13 @@ export default class Profile extends React.Component {
             <Block
               row
               space="between"
-              style={{ paddingVertical: 16, alignItems: "baseline" }}
+              style={{ marginTop: theme.SIZES.BASE, flexWrap: "wrap" }}
             >
-              <Text size={16}>{"Hi"}</Text>
-            </Block>
-            <Block style={{ paddingBottom: -HeaderHeight * 2 }}>
-              <Block>
-                <Product
-                  product={Images.Activities[0]}
-                  horizontal
-                  fromProfile={true}
-                />
-                <Product
-                  product={Images.Activities[1]}
-                  horizontal
-                  fromProfile={true}
-                />
-                <Product
-                  product={Images.Activities[2]}
-                  horizontal
-                  fromProfile={true}
-                />
-                <Product
-                  product={Images.Activities[3]}
-                  horizontal
-                  fromProfile={true}
-                />
-                <Product
-                  product={Images.Activities[4]}
-                  horizontal
-                  fromProfile={true}
-                />
-                <Product
-                  product={Images.Activities[5]}
-                  horizontal
-                  fromProfile={true}
-                />
-                <Product
-                  product={Images.Activities[5]}
-                  horizontal
-                  fromProfile={true}
-                />
-              </Block>
+              {Images.Activities.map((img, index) => (
+                <Block key={index} style={styles.shadow}>
+                  <Product product={img} horizontal fromProfile={true} />
+                </Block>
+              ))}
             </Block>
           </ScrollView>
         </Block>
@@ -128,9 +90,16 @@ export default class Profile extends React.Component {
 }
 
 const styles = StyleSheet.create({
+  albumThumb: {
+    borderRadius: 4,
+    marginVertical: 4,
+    alignSelf: "center",
+    width: thumbMeasure,
+    height: thumbMeasure
+  },
   profile: {
     marginTop: Platform.OS === "android" ? -HeaderHeight : 0,
-    marginBottom: -HeaderHeight * 2
+    marginBottom: -HeaderHeight * 3
   },
   profileImage: {
     width: width * 1.1,
@@ -166,13 +135,13 @@ const styles = StyleSheet.create({
     padding: theme.SIZES.BASE,
     marginHorizontal: theme.SIZES.BASE,
     marginTop: -theme.SIZES.BASE * 7,
-    borderTopLeftRadius: 13,
-    borderTopRightRadius: 13,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
     backgroundColor: theme.COLORS.WHITE,
     shadowColor: "black",
     shadowOffset: { width: 0, height: 0 },
     shadowRadius: 8,
-    shadowOpacity: 0.2,
+    shadowOpacity: 0.5,
     zIndex: 2
   },
   thumb: {

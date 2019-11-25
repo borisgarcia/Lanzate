@@ -11,34 +11,30 @@ const Avatar =
   "https://images.unsplash.com/photo-1518725522904-4b3939358342?fit=crop&w=210&q=80";
 
 const Activities = [
-  {
+  /*  {
     tittle: "Restaurantes",
     image:
-      "https://cdn1.iconfinder.com/data/icons/miscellaneous-ii-line-style/150/food-lovers-512.png"
-  },
+      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/elle-restaurantes-moda-madrid-1568887100.jpg?crop=0.752xw:1.00xh;0.125xw,0&resize=640:*"
+  }, */
   {
-    tittle: "Restaurantes",
-    image: "https://cdn2.iconfinder.com/data/icons/maki/100/lodging-512.png"
-  },
-  {
-    tittle: "Restaurantes",
+    title: "Cafeterias",
     image:
-      "https://cdn4.iconfinder.com/data/icons/coffee-108/512/coffee-cafe-13-512.png"
+      "https://cdn2.traveler.es/uploads/images/thumbs/201440/oda_al_cafe_y_a_las_cafeterias_mas_adictivas_de_espana_456468603_1000x668.jpg"
   },
   {
-    tittle: "Restaurantes",
+    title: "Hospedaje",
     image:
-      "https://cdn5.vectorstock.com/i/1000x1000/13/49/recreation-activities-and-leisure-icons-vector-14921349.jpg"
+      "https://www.ghlhoteles.com/cache/ec/1b/ec1ba3efe09440cccc8211f91bbe470f.jpg"
   },
   {
-    tittle: "Restaurantes",
+    title: "Sitios turísticos",
     image:
-      "https://cdn2.iconfinder.com/data/icons/rounded-white-basic-ui-set-3/139/Gallery-RoundedWhite-512.png"
+      "https://img.culturacolectiva.com/content/2017/04/isla-de-la-bahia-honduras.jpg"
   },
   {
-    tittle: "Restaurantes",
+    title: "Actividades",
     image:
-      "https://cdn4.iconfinder.com/data/icons/minimal-set-four/32/minimal-77-512.png"
+      "https://cdn-az.allevents.in/banners/d19fbb4cc57c11e4bfc80146e87226ca"
   }
 ];
 
