@@ -32,16 +32,6 @@ export default class Onboarding extends React.Component {
         </Block>
         <Block flex space="between" style={styles.padded}>
           <Block flex space="around" style={{ zIndex: 2 }}>
-            {/* <Block>
-              <Block>
-                <Text color="white" style={styles.title} size={60}>
-                  ¡Lánzate!
-                </Text>
-              </Block>
-              <Text size={16} color="rgba(255,255,255,0.6)">
-                Algun Texto por aqui.
-              </Text>
-            </Block> */}
             <Block center>
               <Button
                 shadowless

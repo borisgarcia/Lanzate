@@ -9,6 +9,7 @@ import {
 import HomeScreen from "../screens/Home";
 import OnboardingScreen from "../screens/Onboarding";
 import ProfileScreen from "../screens/Profile";
+import InfoScreen from "../screens/Info";
 
 import Header from "../components/Header";
 
@@ -51,7 +52,7 @@ const NavStack = createStackNavigator(
     Onboarding: {
       screen: OnboardingScreen,
       navigationOptions: ({ navigation }) => ({
-        header: <Header title="" navigation={navigation} />
+        header: <Header transparent={true} title="" />
       })
     },
     Home: {
@@ -71,7 +72,13 @@ const NavStack = createStackNavigator(
           />
         )
       })
-    }
+    },
+    Info: {
+      screen: InfoScreen,
+      navigationOptions: ({ navigation }) => ({
+        header: <Header title="Informacion" navigation={navigation} />
+      })
+    },
   },
   {
     cardStyle: {

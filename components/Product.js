@@ -59,7 +59,7 @@ class Product extends React.Component {
 
     const productInfo = (
       <TouchableWithoutFeedback
-        //onPress={() => navigation.navigate("Profile", { params: product })}
+        onPress={() => navigation.navigate("Info", { params: product })}
       >
         <Block flex style={styles.options}>
           <Block flex card shadow style={styles.category}>
