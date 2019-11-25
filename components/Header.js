@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "bold",
     fontStyle: "italic",
-    fontFamily:"serif"
+    fontFamily: "serif"
   },
   navbar: {
     paddingVertical: 0,
