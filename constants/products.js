@@ -186,38 +186,101 @@ export default [
       "https://upload.wikimedia.org/wikipedia/commons/e/ea/Juticalpa-art_127_%281%29.jpg",
     cafeterias: [
       {
-        image:
-          "https://diarioroatan.com/wp-content/uploads/2018/02/gotakey1.png",
-        title: "Test",
-        direccion: "Test2",
-        horario: "Test3"
+        image: "https://imgur.com/kvOnWwT.png",
+        title: "Memo´s Café",
+        direccion: "Direccion: Juticalpa",
+        horario: "Telefono: 9800-8391"
+      },
+      {
+        image: "https://imgur.com/g8GQJIU.png",
+        title: "Paradise Café",
+        direccion: "Direccion: San Esteban",
+        horario: "Telefono: "
+      },
+      {
+        image: "https://imgur.com/p8ohcKj.png",
+        title: "Ely's Café - RN-15",
+        direccion: "Direccion: Catacamas",
+        horario: "Telefono: 9962-0985"
+      },
+      {
+        image: "https://imgur.com/2mcxDV5.png",
+        title: "Leyenda's Café",
+        direccion: "Direccion: Barrio el Centro, Catacamas",
+        horario: "Telefono: 9908-2334"
       }
     ],
     hospedaje: [
       {
-        image:
-          "https://diarioroatan.com/wp-content/uploads/2018/02/gotakey1.png",
-        title: "Test2",
-        direccion: "Test2",
-        horario: "Test3"
+        image: "https://imgur.com/Rv03xNy.png",
+        title: "Hotel Posada del Centro",
+        direccion: "Direccion: ",
+        horario: "Telefono: 2785-3414"
+      },
+      {
+        image: "https://imgur.com/G729iVY.png",
+        title: "Hotel Ciudad Blanca",
+        direccion: "Direccion: ",
+        horario: "Telefono: 3311-9988"
+      },
+      {
+        image: "https://imgur.com/1S7Y87o.png",
+        title: "Hotel Plaza Maria",
+        direccion: "Direccion: ",
+        horario: "Telefono: 9460-9621"
+      },
+      {
+        image: "https://imgur.com/atYpQEi.png",
+        title: "Hotel Papabeto",
+        direccion: "Direccion: ",
+        horario: "Telefono: 3362-7238"
       }
     ],
     sitios: [
       {
-        image:
-          "https://diarioroatan.com/wp-content/uploads/2018/02/gotakey1.png",
-        title: "Test3",
-        direccion: "Test2",
-        horario: "Test3"
+        image: "https://imgur.com/OcNb8Xh.png",
+        title: "Parque Ecologico Cuevas de Talgua",
+        direccion: "Direccion: aldea de Talgua, Catacamas",
+        horario: ""
+      },
+      {
+        image: "https://imgur.com/8qIOTID.png",
+        title: "Iguana's Water Park",
+        direccion: "Direccion: Ciudad Catacamas",
+        horario: ""
+      },
+      {
+        image: "https://imgur.com/B9oPe2q.png",
+        title: "Kaha Kamasa - también conocida como Ciudad Blanca",
+        direccion: "Direccion: Ciudad Blanca",
+        horario: ""
+      },
+      {
+        image: "https://imgur.com/UPlZpyZ.png",
+        title: "Cerro “El boqueron",
+        direccion:
+          "Direccion: ubicado entre los municipios de Juticalpa y Catacamas",
+        horario: ""
       }
     ],
     actividades: [
       {
-        image:
-          "https://diarioroatan.com/wp-content/uploads/2018/02/gotakey1.png",
-        title: "Test4",
-        direccion: "Test2",
-        horario: "Test3"
+        image: "https://imgur.com/UGUmgni.png",
+        title: "Hiking",
+        direccion: "Direccion: La Muralla",
+        horario: ""
+      },
+      {
+        image: "https://imgur.com/1LudtxM.png",
+        title: "Arqueología",
+        direccion: "Direccion: Cuevas de Talgua",
+        horario: ""
+      },
+      {
+        image: "https://imgur.com/zFzTaVn.png",
+        title: "Explorar historia",
+        direccion: "Direccion: Iglesia Colonia, Juticalpa",
+        horario: ""
       }
     ]
   },
@@ -227,38 +290,107 @@ export default [
       "https://diarioroatan.com/wp-content/uploads/2017/07/san-lorenzo-iglesia.jpg",
     cafeterias: [
       {
-        image:
-          "https://diarioroatan.com/wp-content/uploads/2018/02/gotakey1.png",
-        title: "Test",
-        direccion: "Test2",
-        horario: "Test3"
+        image: "https://imgur.com/gGXhlAU.png",
+        title: "Panaderia Modelo",
+        direccion: "Direccion: Barrio La Cruz, San Lorenzo",
+        horario: "Telefono: "
+      },
+      {
+        image: "https://imgur.com/G70H3zB.png",
+        title: "Espresso Americano",
+        direccion: "Direccion: Unicentro, San Lorenzo",
+        horario: "Telefono: 3183-0533"
+      },
+      {
+        image: "https://imgur.com/20TJDmg.png",
+        title: "Café Moropocay",
+        direccion: "Direccion: Nacaome",
+        horario: "Telefono: 8771-0767"
+      },
+      {
+        image: "https://imgur.com/Mvg2lcr.png",
+        title: "Reposteria Beraca",
+        direccion: "Direccion: Nacaome",
+        horario: "Telefono: "
       }
     ],
     hospedaje: [
       {
-        image:
-          "https://diarioroatan.com/wp-content/uploads/2018/02/gotakey1.png",
-        title: "Test2",
-        direccion: "Test2",
-        horario: "Test3"
+        image: "https://imgur.com/daNOxJR.png",
+        title: "Hotel aquatours",
+        direccion: "Direccion: ",
+        horario: "Telefono: 3176-5477"
+      },
+      {
+        image: "https://imgur.com/4lpwy5k.png",
+        title: "Ranchitos Manglares",
+        direccion: "Direccion: ",
+        horario: "Telefono: +27 81 2221"
+      },
+      {
+        image: "https://imgur.com/1473rXt.png",
+        title: "Apartamentos Atardecer en Amapala",
+        direccion: "Direccion: ",
+        horario: "Telefono: 9700-0316"
+      },
+      {
+        image: "https://imgur.com/hnkJVCe.png",
+        title: "Hotel Oasis Colonial",
+        direccion: "Direccion: ",
+        horario: "Telefono: 2280-2740	"
       }
     ],
     sitios: [
       {
-        image:
-          "https://diarioroatan.com/wp-content/uploads/2018/02/gotakey1.png",
-        title: "Test3",
-        direccion: "Test2",
-        horario: "Test3"
+        image: "https://imgur.com/Iu8xDl7.png",
+        title: "Paseo Turístico La Cabaña",
+        direccion: "Direccion: Sur de la ciudad",
+        horario: ""
+      },
+      {
+        image: "https://imgur.com/2Oi4xuN.png",
+        title: "Ciudad minera",
+        direccion: "Direccion: Valle de Ángeles",
+        horario: ""
+      },
+      {
+        image: "https://imgur.com/GNI7ZDA.png",
+        title: "Iglesia del Valle de Angeles",
+        direccion: "Direccion: Valle de Ángeles",
+        horario: ""
+      },
+      {
+        image: "https://imgur.com/S5dl8vz.png",
+        title: "Playa del Amor",
+        direccion:
+          "Direccion: interior de los Manglares a 25 minutos en lancha",
+        horario: ""
       }
     ],
     actividades: [
       {
-        image:
-          "https://diarioroatan.com/wp-content/uploads/2018/02/gotakey1.png",
-        title: "Test4",
-        direccion: "Test2",
-        horario: "Test3"
+        image: "https://imgur.com/PheLlM5.png",
+        title: "Desenterrar historia en la Isla Tigre ",
+        direccion: "Direccion: Isla del Tigre",
+        horario: ""
+      },
+      {
+        image: "https://imgur.com/snrp1SD.png",
+        title: "Hiking",
+        direccion: "Direccion: Cerro El Tigre",
+        horario: ""
+      },
+      {
+        image: "https://imgur.com/OfHaYKF.png",
+        title: "Exploracion de islas",
+        direccion: "Direccion: Golfo de Fonseca",
+        horario: ""
+      },
+      {
+        image: "https://imgur.com/WAIpRjC.png",
+        title: "Disfrutar de las aguas termales",
+        direccion: "Direccion: Nacaome",
+        horario: ""
       }
     ]
   },
@@ -268,8 +400,25 @@ export default [
       "https://media2.trover.com/T/556d0595198e443e5200028c/fixedw_large_4x.jpg",
     cafeterias: [
       {
-        image:
-          "https://diarioroatan.com/wp-content/uploads/2018/02/gotakey1.png",
+        image: "https://imgur.com/PjzXCwk.png",
+        title: "Test",
+        direccion: "Test2",
+        horario: "Test3"
+      },
+      {
+        image: "https://imgur.com/3OgEq9o.png",
+        title: "Test",
+        direccion: "Test2",
+        horario: "Test3"
+      },
+      {
+        image: "https://imgur.com/Mpb3n49.png",
+        title: "Test",
+        direccion: "Test2",
+        horario: "Test3"
+      },
+      {
+        image: "https://imgur.com/luXn8kS.png",
         title: "Test",
         direccion: "Test2",
         horario: "Test3"
@@ -277,8 +426,25 @@ export default [
     ],
     hospedaje: [
       {
-        image:
-          "https://diarioroatan.com/wp-content/uploads/2018/02/gotakey1.png",
+        image: "https://imgur.com/WOiwZ56.png",
+        title: "Test2",
+        direccion: "Test2",
+        horario: "Test3"
+      },
+      {
+        image: "https://imgur.com/GZcwje4.png",
+        title: "Test2",
+        direccion: "Test2",
+        horario: "Test3"
+      },
+      {
+        image: "https://imgur.com/6yFGFgx.png",
+        title: "Test2",
+        direccion: "Test2",
+        horario: "Test3"
+      },
+      {
+        image: "https://imgur.com/54M1HT5.png",
         title: "Test2",
         direccion: "Test2",
         horario: "Test3"
@@ -286,8 +452,25 @@ export default [
     ],
     sitios: [
       {
-        image:
-          "https://diarioroatan.com/wp-content/uploads/2018/02/gotakey1.png",
+        image: "https://imgur.com/6YA2fIe.png",
+        title: "Test3",
+        direccion: "Test2",
+        horario: "Test3"
+      },
+      {
+        image: "https://imgur.com/0Vxf7zy.png",
+        title: "Test3",
+        direccion: "Test2",
+        horario: "Test3"
+      },
+      {
+        image: "https://imgur.com/sMK4P8Q.png",
+        title: "Test3",
+        direccion: "Test2",
+        horario: "Test3"
+      },
+      {
+        image: "https://imgur.com/771kozR.png",
         title: "Test3",
         direccion: "Test2",
         horario: "Test3"
@@ -295,8 +478,26 @@ export default [
     ],
     actividades: [
       {
+        image: "https://imgur.com/vm6Jxdq.png",
+        title: "Test4",
+        direccion: "Test2",
+        horario: "Test3"
+      },
+      {
         image:
-          "https://diarioroatan.com/wp-content/uploads/2018/02/gotakey1.png",
+          "https://www.perfectdailygrind.com/wp-content/uploads/2017/10/tostando-cafe.jpg",
+        title: "Test4",
+        direccion: "Test2",
+        horario: "Test3"
+      },
+      {
+        image: "https://imgur.com/xqURKq2.png",
+        title: "Test4",
+        direccion: "Test2",
+        horario: "Test3"
+      },
+      {
+        image: "https://imgur.com/o7GuVsI.png",
         title: "Test4",
         direccion: "Test2",
         horario: "Test3"
@@ -318,8 +519,25 @@ export default [
     ],
     hospedaje: [
       {
-        image:
-          "https://diarioroatan.com/wp-content/uploads/2018/02/gotakey1.png",
+        image: "https://imgur.com/hZsADXf.png",
+        title: "Test2",
+        direccion: "Test2",
+        horario: "Test3"
+      },
+      {
+        image: " https://imgur.com/QvcdRdG.png",
+        title: "Test2",
+        direccion: "Test2",
+        horario: "Test3"
+      },
+      {
+        image: "https://imgur.com/Bujb9UU.png",
+        title: "Test2",
+        direccion: "Test2",
+        horario: "Test3"
+      },
+      {
+        image: " https://imgur.com/seLeu6M.png",
         title: "Test2",
         direccion: "Test2",
         horario: "Test3"
@@ -327,8 +545,25 @@ export default [
     ],
     sitios: [
       {
-        image:
-          "https://diarioroatan.com/wp-content/uploads/2018/02/gotakey1.png",
+        image: "https://imgur.com/ZdPvfFs.png",
+        title: "Test3",
+        direccion: "Test2",
+        horario: "Test3"
+      },
+      {
+        image: "https://imgur.com/PFY26lP.png",
+        title: "Test3",
+        direccion: "Test2",
+        horario: "Test3"
+      },
+      {
+        image: "https://imgur.com/TGUWQQG.png",
+        title: "Test3",
+        direccion: "Test2",
+        horario: "Test3"
+      },
+      {
+        image: "https://imgur.com/dgvWkq3.png",
         title: "Test3",
         direccion: "Test2",
         horario: "Test3"
@@ -336,8 +571,19 @@ export default [
     ],
     actividades: [
       {
-        image:
-          "https://diarioroatan.com/wp-content/uploads/2018/02/gotakey1.png",
+        image: "https://imgur.com/S3ZG9lT.png",
+        title: "Test4",
+        direccion: "Test2",
+        horario: "Test3"
+      },
+      {
+        image: "https://imgur.com/1zjEFVd.png",
+        title: "Test4",
+        direccion: "Test2",
+        horario: "Test3"
+      },
+      {
+        image: "https://imgur.com/Ys1wfkG.png",
         title: "Test4",
         direccion: "Test2",
         horario: "Test3"
