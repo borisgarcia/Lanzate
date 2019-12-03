@@ -79,7 +79,7 @@ export default [
         title: "Luna Café",
         direccion:
           "Direccion: Frente a la casa de la Cultura Danli:, El Paraíso",
-        horario: "3395-1500"
+        horario: "Telefono: 3395-1500"
       },
       {
         image: "https://imgur.com/KGxzXsW.png",
@@ -91,7 +91,7 @@ export default [
         image: "https://imgur.com/TjuF66K.png",
         title: "Café Casa Salvador Diaz",
         direccion:
-          "Direccion: Barrio la virgen Cuadra Y Media Abajo Del Parque Central",
+          "Direccion: Barrio la virgen Cuadra Abajo Del Parque Central",
         horario: "Telefono: "
       },
       {
@@ -401,106 +401,106 @@ export default [
     cafeterias: [
       {
         image: "https://imgur.com/PjzXCwk.png",
-        title: "Test",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "Carpintero Café Y Arte Galería Café",
+        direccion: "Direccion: Marcala",
+        horario: "Telefono: 9743-8198"
       },
       {
         image: "https://imgur.com/3OgEq9o.png",
-        title: "Test",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "Perfume de la Montaña Café y Postres ",
+        direccion: "Direccion: Marcala",
+        horario: "Telefono: "
       },
       {
         image: "https://imgur.com/Mpb3n49.png",
-        title: "Test",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "CAFÉ de la Sierra",
+        direccion: "Direccion: Marcala",
+        horario: ""
       },
       {
         image: "https://imgur.com/luXn8kS.png",
-        title: "Test",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "Aroma Café",
+        direccion: "Direccion: Marcala",
+        horario: ""
       }
     ],
     hospedaje: [
       {
         image: "https://imgur.com/WOiwZ56.png",
-        title: "Test2",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "Hotel Caxa Real",
+        direccion: "Direccion: ",
+        horario: "Telefono: 2772-4645"
       },
       {
         image: "https://imgur.com/GZcwje4.png",
-        title: "Test2",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "Hotel Antigua Comayagua",
+        direccion: "Direccion: ",
+        horario: "Telefono: 2772-0816"
       },
       {
         image: "https://imgur.com/6yFGFgx.png",
-        title: "Test2",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "Hotel Santa María",
+        direccion: "Direccion: ",
+        horario: "Telefono: 2772-7872"
       },
       {
         image: "https://imgur.com/54M1HT5.png",
-        title: "Test2",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "Halston Hotel",
+        direccion: "Direccion: ",
+        horario: "Telefono: 2772-0755"
       }
     ],
     sitios: [
       {
         image: "https://imgur.com/6YA2fIe.png",
-        title: "Test3",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "El chircal",
+        direccion: "Direccion: aldea de Yarumela y la Aldea de Miravalle",
+        horario: ""
       },
       {
         image: "https://imgur.com/0Vxf7zy.png",
-        title: "Test3",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "Centro de formación San Pedro Nolásco",
+        direccion: "Direccion: La Ermita",
+        horario: ""
       },
       {
         image: "https://imgur.com/sMK4P8Q.png",
-        title: "Test3",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "Cueva del Viejo",
+        direccion: "Direccion: Marcala",
+        horario: ""
       },
       {
         image: "https://imgur.com/771kozR.png",
-        title: "Test3",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "Iglesia Nuestra Señora del Perpetuo Socorro",
+        direccion: "Direccion: Oeste del parque central Elena de Carias",
+        horario: ""
       }
     ],
     actividades: [
       {
         image: "https://imgur.com/vm6Jxdq.png",
-        title: "Test4",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "Canopy",
+        direccion: "",
+        horario: ""
       },
       {
         image:
           "https://www.perfectdailygrind.com/wp-content/uploads/2017/10/tostando-cafe.jpg",
-        title: "Test4",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "Conocer el proceso del café",
+        direccion: "Direccion: Marcala La Paz",
+        horario: ""
       },
       {
         image: "https://imgur.com/xqURKq2.png",
-        title: "Test4",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "Explorar su belleza geográfica",
+        direccion: "Direccion: Marcala, La Paz",
+        horario: ""
       },
       {
         image: "https://imgur.com/o7GuVsI.png",
-        title: "Test4",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "Hiking",
+        direccion: "",
+        horario: ""
       }
     ]
   },
@@ -510,83 +510,100 @@ export default [
       "https://munielprogreso.hn/assets/images/turismo/museo-ferroviario.JPG",
     cafeterias: [
       {
-        image:
-          "https://diarioroatan.com/wp-content/uploads/2018/02/gotakey1.png",
-        title: "Test",
-        direccion: "Test2",
-        horario: "Test3"
+        image: "https://imgur.com/GsXZRF1.png",
+        title: "Barista's Café",
+        direccion: "Direccion: El Progreso",
+        horario: "Telefono: 3344-1336"
+      },
+      {
+        image: "https://imgur.com/cDZfxk7.png",
+        title: "La Casa Del Café",
+        direccion: "Direccion: 1 Avenida, El Progreso",
+        horario: "Telefono: 3238-3252"
+      },
+      {
+        image: "https://imgur.com/03U5Pbx.png",
+        title: "Sabor Y Café",
+        direccion: "Direccion:  2A Calle Sur, El Progreso",
+        horario: "Telefono: 2630-2452"
+      },
+      {
+        image: "https://imgur.com/cZeSAQC.png",
+        title: "Bayonne Coffee",
+        direccion: "Direccion: El Progreso",
+        horario: "Telefono: 9871-8566"
       }
     ],
     hospedaje: [
       {
         image: "https://imgur.com/hZsADXf.png",
-        title: "Test2",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "Hotel Sandoval",
+        direccion: "Direccion: ",
+        horario: "Telefono: 9566-5185"
       },
       {
-        image: " https://imgur.com/QvcdRdG.png",
-        title: "Test2",
-        direccion: "Test2",
-        horario: "Test3"
+        image: "https://imgur.com/QvcdRdG.png",
+        title: "Hotel e Inversiones Morazan",
+        direccion: "Direccion: ",
+        horario: "Telefono: "
       },
       {
         image: "https://imgur.com/Bujb9UU.png",
-        title: "Test2",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "Hotel Fernando",
+        direccion: "Direccion: ",
+        horario: "Telefono: 2671-2820"
       },
       {
-        image: " https://imgur.com/seLeu6M.png",
-        title: "Test2",
-        direccion: "Test2",
-        horario: "Test3"
+        image: "https://imgur.com/seLeu6M.png",
+        title: "Hotel Marquez",
+        direccion: "Direccion: ",
+        horario: "Telefono: 2671-2815"
       }
     ],
     sitios: [
       {
         image: "https://imgur.com/ZdPvfFs.png",
-        title: "Test3",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "Cascada El Pirata",
+        direccion: "Direccion: Parque Nacional Pico Pijol",
+        horario: ""
       },
       {
         image: "https://imgur.com/PFY26lP.png",
-        title: "Test3",
-        direccion: "Test2",
+        title: "Casa de Arte",
+        direccion: "Direccion: Yoro",
         horario: "Test3"
       },
       {
         image: "https://imgur.com/TGUWQQG.png",
-        title: "Test3",
-        direccion: "Test2",
+        title: "Centro",
+        direccion: "Direccion: El Progreso",
         horario: "Test3"
       },
       {
         image: "https://imgur.com/dgvWkq3.png",
-        title: "Test3",
-        direccion: "Test2",
+        title: "La Lluvia de Peces",
+        direccion: "Direccion: Yoro",
         horario: "Test3"
       }
     ],
     actividades: [
       {
         image: "https://imgur.com/S3ZG9lT.png",
-        title: "Test4",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "Explorar historia",
+        direccion: "Direccion: Museo Ferroviario de El Progreso",
+        horario: ""
       },
       {
         image: "https://imgur.com/1zjEFVd.png",
-        title: "Test4",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "Camping",
+        direccion: "Direccion: El Parque nacional Montaña de Yoro",
+        horario: ""
       },
       {
         image: "https://imgur.com/Ys1wfkG.png",
-        title: "Test4",
-        direccion: "Test2",
-        horario: "Test3"
+        title: "Hiking",
+        direccion: "Direccion: Tour del Cacao, mico quemado",
+        horario: ""
       }
     ]
   },

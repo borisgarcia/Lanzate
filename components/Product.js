@@ -46,8 +46,12 @@ class Product extends React.Component {
           <Block flex style={[styles.imageContainer, styles.shadow]}>
             <Image source={{ uri: product.image }} style={imageStyles} />
             <Text></Text>
-            <Text>{product.horario}</Text>
-            <Text>{product.direccion}</Text>
+            <Text size={14} style={styles.productInfo}>
+              {product.horario}
+            </Text>
+            <Text size={14} style={styles.productInfo}>
+              {product.direccion}
+            </Text>
             <Text></Text>
           </Block>
         ) : (
@@ -119,6 +123,11 @@ const styles = StyleSheet.create({
     minHeight: 114
   },
   productTitle: {
+    flex: 1,
+    flexWrap: "wrap",
+    paddingBottom: 6
+  },
+  productInfo: {
     flex: 1,
     flexWrap: "wrap",
     paddingBottom: 6
