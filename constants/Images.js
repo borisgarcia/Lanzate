@@ -11,11 +11,6 @@ const Avatar =
   "https://images.unsplash.com/photo-1518725522904-4b3939358342?fit=crop&w=210&q=80";
 
 const Activities = [
-  /*  {
-    tittle: "Restaurantes",
-    image:
-      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/elle-restaurantes-moda-madrid-1568887100.jpg?crop=0.752xw:1.00xh;0.125xw,0&resize=640:*"
-  }, */
   {
     title: "Cafeterias",
     image:

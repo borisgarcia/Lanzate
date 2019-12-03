@@ -5,7 +5,6 @@ import {
   Dimensions,
   Image,
   TouchableWithoutFeedback,
-  ScrollView,
   ImageBackground
 } from "react-native";
 import { Block, Text, theme } from "galio-framework";
@@ -22,7 +21,8 @@ class Product extends React.Component {
       horizontal,
       full,
       style,
-      imageStyle
+      imageStyle,
+      fromInfo
     } = this.props;
     const imageStyles = [
       styles.image,
@@ -36,30 +36,39 @@ class Product extends React.Component {
         flex
         style={[styles.product, styles.shadow, style]}
       >
-        <TouchableWithoutFeedback
-          onPress={() => navigation.navigate("Profile", { params: product })}
-        >
-          <Block flex space="between" style={styles.productDescription}>
-            <Text size={18} style={styles.productTitle}>
-              {product.title}
-            </Text>
-            <Text></Text>
-          </Block>
-        </TouchableWithoutFeedback>
-        <TouchableWithoutFeedback
-          onPress={() => navigation.navigate("Profile", { params: product })}
-        >
+        <Block flex space="between" style={styles.productDescription}>
+          <Text size={18} style={styles.productTitle}>
+            {product.title}
+          </Text>
+          <Text></Text>
+        </Block>
+        {fromInfo ? (
           <Block flex style={[styles.imageContainer, styles.shadow]}>
             <Image source={{ uri: product.image }} style={imageStyles} />
             <Text></Text>
+            <Text>{product.horario}</Text>
+            <Text>{product.direccion}</Text>
+            <Text></Text>
           </Block>
-        </TouchableWithoutFeedback>
+        ) : (
+          <TouchableWithoutFeedback
+            onPress={() => navigation.navigate("Profile", { params: product })}
+          >
+            <Block flex style={[styles.imageContainer, styles.shadow]}>
+              <Image source={{ uri: product.image }} style={imageStyles} />
+              <Text></Text>
+              <Text></Text>
+            </Block>
+          </TouchableWithoutFeedback>
+        )}
       </Block>
     );
 
     const productInfo = (
       <TouchableWithoutFeedback
-        onPress={() => navigation.navigate("Info", { params: product })}
+        onPress={() =>
+          navigation.navigate("Info", { params: product, info: info })
+        }
       >
         <Block flex style={styles.options}>
           <Block flex card shadow style={styles.category}>

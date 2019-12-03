@@ -8,9 +8,6 @@ import {
   Platform
 } from "react-native";
 import { Block, Text, theme } from "galio-framework";
-import { LinearGradient } from "expo-linear-gradient";
-
-import { Icon } from "../components";
 import { Images, materialTheme } from "../constants";
 import { HeaderHeight } from "../constants/utils";
 const util = require("util");
@@ -24,13 +21,6 @@ export default class Profile extends React.Component {
     return (
       <Block flex style={styles.profile}>
         <Block flex>
-          <Text
-            size={12}
-            color={theme.COLORS.PRIMARY}
-            onPress={() => this.props.navigation.navigate("Home")}
-          >
-            View All
-          </Text>
           <ImageBackground
             source={{ uri: params.image }}
             style={styles.profileContainer}
@@ -41,31 +31,7 @@ export default class Profile extends React.Component {
                 <Text color="white" size={28} style={{ paddingBottom: 8 }}>
                   {params.title}
                 </Text>
-                <Block row space="between">
-                  <Block row>
-                    <Block middle style={styles.pro}>
-                      <Text size={16} color="white">
-                        {}
-                      </Text>
-                    </Block>
-                    <Text
-                      color="white"
-                      size={16}
-                      muted
-                      style={styles.seller}
-                    ></Text>
-                    <Text size={16} color={materialTheme.COLORS.WARNING}>
-                      4.8{" "}
-                      <Icon name="shape-star" family="GalioExtra" size={14} />
-                    </Text>
-                  </Block>
-                  <Block></Block>
-                </Block>
               </Block>
-              <LinearGradient
-                colors={["rgba(0,0,0,0)", "rgba(0,0,0,1)"]}
-                style={styles.gradient}
-              />
             </Block>
           </ImageBackground>
         </Block>
@@ -76,11 +42,38 @@ export default class Profile extends React.Component {
               space="between"
               style={{ marginTop: theme.SIZES.BASE, flexWrap: "wrap" }}
             >
-              {Images.Activities.map((img, index) => (
-                <Block key={index} style={styles.shadow}>
-                  <Product product={img} horizontal fromProfile={true} />
-                </Block>
-              ))}
+              <Block style={styles.shadow}>
+                <Product
+                  product={Images.Activities[0]}
+                  info={params.cafeterias}
+                  horizontal
+                  fromProfile={true}
+                />
+              </Block>
+              <Block style={styles.shadow}>
+                <Product
+                  product={Images.Activities[1]}
+                  info={params.hospedaje}
+                  horizontal
+                  fromProfile={true}
+                />
+              </Block>
+              <Block style={styles.shadow}>
+                <Product
+                  product={Images.Activities[2]}
+                  info={params.sitios}
+                  horizontal
+                  fromProfile={true}
+                />
+              </Block>
+              <Block style={styles.shadow}>
+                <Product
+                  product={Images.Activities[3]}
+                  info={params.actividades}
+                  horizontal
+                  fromProfile={true}
+                />
+              </Block>
             </Block>
           </ScrollView>
         </Block>
@@ -158,5 +151,6 @@ const styles = StyleSheet.create({
     bottom: 0,
     height: "30%",
     position: "absolute"
-  }
+  },
+  
 });

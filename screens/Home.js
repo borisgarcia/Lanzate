@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Dimensions, ScrollView } from "react-native";
-import {  Block, theme } from "galio-framework";
+import { Block, theme } from "galio-framework";
 
 import { Product } from "../components/";
 
@@ -15,13 +15,48 @@ export default class Home extends React.Component {
         contentContainerStyle={styles.products}
       >
         <Block flex>
-          <Product product={products[0]} full fromProfile={false}/>
-          <Product product={products[1]} full fromProfile={false}/>
-          <Product product={products[2]} full fromProfile={false}/>
-          <Product product={products[3]} full fromProfile={false}/>
-          <Product product={products[4]} full fromProfile={false}/>
-          <Product product={products[5]} full fromProfile={false}/>
-          <Product product={products[6]} full fromProfile={false}/>
+          <Product
+            product={products[0]}
+            full
+            fromInfo={false}
+            fromProfile={false}
+          />
+          <Product
+            product={products[1]}
+            full
+            fromInfo={false}
+            fromProfile={false}
+          />
+          <Product
+            product={products[2]}
+            full
+            fromInfo={false}
+            fromProfile={false}
+          />
+          <Product
+            product={products[3]}
+            full
+            fromInfo={false}
+            fromProfile={false}
+          />
+          <Product
+            product={products[4]}
+            full
+            fromInfo={false}
+            fromProfile={false}
+          />
+          <Product
+            product={products[5]}
+            full
+            fromInfo={false}
+            fromProfile={false}
+          />
+          <Product
+            product={products[6]}
+            full
+            fromInfo={false}
+            fromProfile={false}
+          />
         </Block>
       </ScrollView>
     );
